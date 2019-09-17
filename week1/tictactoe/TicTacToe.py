@@ -1,6 +1,7 @@
 import wx
 import random
 
+
 class Counter:
     def __init__(self, string):
         self.label = string
@@ -138,6 +139,7 @@ class Player:
     def __str__(self):
         return '[' + str(self.counter) + ']'
 
+
 class ComputerPlayer(Player):
     """ Implements algorithms for playing game """
 
@@ -174,6 +176,7 @@ class ComputerPlayer(Player):
             return Move(self.counter, 2, 0)
         else:
             return self.randomly_select_cell()
+
 
 class Board:
     """ The ticTacToe board"""
