@@ -1,14 +1,19 @@
 import turtle
 
 
-def draw_circle(x, y, size, fill_colour='white'):
+def draw_circle(x, y, size, filled=True, fill_colour='white'):
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
-    turtle.fillcolor(fill_colour)
-    turtle.begin_fill()
+
+    if filled:
+        turtle.fillcolor(fill_colour)
+        turtle.begin_fill()
+
     turtle.circle(size)
-    turtle.end_fill()
+
+    if filled:
+        turtle.end_fill()
 
 
 def draw_semi_circle(x, y, size):
