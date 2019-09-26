@@ -26,7 +26,7 @@ def draw_semi_circle(x, y, size):
 
 def draw_eye(x, y, size):
     draw_circle(x, y, size)
-    draw_circle(x, y + (size / 2), (size / 2), 'black')
+    draw_circle(x, y + (size / 2), (size / 2), fill_colour='black')
 
 
 def draw_mouth(x, y, size):
