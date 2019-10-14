@@ -17,7 +17,7 @@ print(my_string[3:])
 print(my_string[3:6])
 print(my_string[:6])
 
-age = input('please enter age')
+age = input('please enter age: ')
 
 if age.isnumeric():
     age = int(age)
