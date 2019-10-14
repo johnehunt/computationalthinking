@@ -8,7 +8,7 @@ print(x)
 
 # Be careful of this
 print(2 + 2 * 2 - 1 // 2)
-print(2 + 2 * 2 - 1)
+# print(2 + 2 * 2 - 1)
 
 # Substrings
 my_string = 'John was here'
