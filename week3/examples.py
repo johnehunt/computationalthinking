@@ -10,12 +10,22 @@ print(x)
 print(2 + 2 * 2 - 1 // 2)
 # print(2 + 2 * 2 - 1)
 
+# Strings can be
+string1 = 'John'
+string2 = "John"
+string3 = """John"""
+
 # Substrings
 my_string = 'John was here'
 print(my_string[3])
 print(my_string[3:])
 print(my_string[3:6])
 print(my_string[:6])
+
+cont = input('Do you want to continue (y/n)?')
+cont = cont.lower()
+if cont == 'n':
+    print('Game over')
 
 age = input('please enter age: ')
 
