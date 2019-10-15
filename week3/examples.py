@@ -8,7 +8,7 @@ print(x)
 
 # Be careful of this
 print(2 + 2 * 2 - 1 // 2)
-print(2 + 2 * 2 - 1)
+# print(2 + 2 * 2 - 1)
 
 # Substrings
 my_string = 'John was here'
@@ -17,7 +17,7 @@ print(my_string[3:])
 print(my_string[3:6])
 print(my_string[:6])
 
-age = input('please enter age')
+age = input('please enter age: ')
 
 if age.isnumeric():
     age = int(age)
