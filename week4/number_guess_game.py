@@ -4,9 +4,15 @@ import random
 MAX_NUMBER_OF_GUESSES = 4
 
 # Print the Welcome Banner
-print("=" * 25)
-print('Welcome to the Number Guess Game')
-print("=" * 25)
+print("=" * 60)
+print('          Welcome to the Number Guess Game')
+print('      ', '-' * 40)
+print("""
+The Computer will ask you to guess a number between 1 and 10.
+You will have', MAX_NUMBER_OF_GUESSES, 'attempts to guess the 
+correct number.
+""")
+print("=" * 60)
 
 # Set up the game playing loop
 game_over = False
