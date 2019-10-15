@@ -9,8 +9,7 @@ print('          Welcome to the Number Guess Game')
 print('      ', '-' * 40)
 print("""
 The Computer will ask you to guess a number between 1 and 10.
-You will have', MAX_NUMBER_OF_GUESSES, 'attempts to guess the 
-correct number.
+You will have""", MAX_NUMBER_OF_GUESSES, """attempts to guess the correct number.
 """)
 print("=" * 60)
 
