@@ -45,22 +45,22 @@ print(z)
 
 
 def get_integer_input(message):
-    """
-    This function will display the message to the user
-    and request that they input an integer.
+  """
+  This function will display the message to the user
+  and request that they input an integer.
 
-    If the user enters something that is not a number
-    then the input will be rejected
-    and an error message will be displayed.
+  If the user enters something that is not a number
+  then the input will be rejected
+  and an error message will be displayed.
 
-    The user will then be asked to try again."""
+  The user will then be asked to try again."""
 
-    value_as_string = input(message)
-    while not value_as_string.isnumeric():
-        print('The input must be an integer')
-        value_as_string = input(message)
+  value_as_string = input(message)
+  while not value_as_string.isnumeric():
+      print('The input must be an integer')
+      value_as_string = input(message)
 
-    return int(value_as_string)
+  return int(value_as_string)
 
 
 age = get_integer_input('Please input your age: ')
@@ -69,7 +69,7 @@ print('age is', age)
 print(get_integer_input.__doc__)
 
 
-def makeAList(start, end):
+def make_a_list(start, end):
     newList = list(range(start, end))
     return newList
 
@@ -78,12 +78,12 @@ def dictionary():
     return {'one': 1, 'two': 2}
 
 
-list1 = makeAList(5, 10)
+list1 = make_a_list(5, 10)
 print(list1)
 
 print(dictionary())
 
-
-double = lambda i : i * i
-
+# Usually only used to define a
+# function on the fly
+double = lambda i: i * i
 print(double(10))
