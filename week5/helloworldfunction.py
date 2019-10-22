@@ -3,21 +3,26 @@ def print_msg():
 
 
 print_msg()
+print(print_msg)
 print(type(print_msg))
 
 
-def print_my_msg(msg):
+def print_my_msg(msg, prompt='>'):
+    print(prompt, end=' ')
     print(msg)
 
 
-print_my_msg('Hello World')
+print_my_msg('Hello World', '&')
 print_my_msg('Good day')
 print_my_msg('Welcome')
 print_my_msg('Ola')
 
+result = 0
 
-def square(n):
-    return n * n
+
+def square(number):
+    result = number * number
+    return result
 
 
 # Store result from square in a variable
@@ -30,8 +35,8 @@ if square(3) < 15:
     print('Still less than 15')
 
 
-def swap(a, b):
-    return b, a
+def swap(first_value, second_value):
+    return second_value, first_value
 
 
 a = 2
@@ -53,7 +58,12 @@ def get_integer_input(message):
   then the input will be rejected
   and an error message will be displayed.
 
-  The user will then be asked to try again."""
+  The user will then be asked to try again.
+
+  For example:
+      age = get_integer_input('Please input your age: ')
+      print('age is', age)
+  """
 
   value_as_string = input(message)
   while not value_as_string.isnumeric():
@@ -70,8 +80,8 @@ print(get_integer_input.__doc__)
 
 
 def make_a_list(start, end):
-    newList = list(range(start, end))
-    return newList
+    new_list = list(range(start, end))
+    return new_list
 
 
 def dictionary():
@@ -87,3 +97,5 @@ print(dictionary())
 # function on the fly
 double = lambda i: i * i
 print(double(10))
+
+
