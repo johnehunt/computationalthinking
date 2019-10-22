@@ -13,8 +13,7 @@ def my_function(x, y):
 
 
 print('Starting')
-
-print(my_function(6,  2))
+print(my_function(6, 0))
 
 try:
     print('Before my_function')
@@ -51,7 +50,7 @@ print('-' * 20)
 
 try:
     print('Before my_function')
-    result = my_function(6, 0)
+    result = my_function(6, 2)
     print(result)
     print('After my_function')
 except ZeroDivisionError as exp:
@@ -63,7 +62,8 @@ else:
 print('-' * 20)
 
 try:
-    result = my_function(6, 0)
+    print('At start')
+    result = my_function(6, 2)
     print(result)
 except ZeroDivisionError as e:
     print(e)
@@ -90,7 +90,7 @@ try:
 except ZeroDivisionError as exp:
     print(exp)
     print('oops')
-except Exception as exp:
+except ValueError as exp:
     print(exp)
     print('oh dear')
 except:
@@ -105,3 +105,19 @@ try:
     print('After my_function')
 finally:
     print('Always printed')
+
+number = 0
+input_accepted = False
+while not input_accepted:
+    user_input = input('Please enter a number')
+    if user_input.isnumeric():
+        number = int(user_input)
+        input_accepted = True
+    else:
+        try:
+            number = float(user_input)
+            input_accepted = True
+        except ValueError:
+            print('Needs to be a number')
+
+print(number)
