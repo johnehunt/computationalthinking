@@ -1,59 +1,70 @@
-def runcalc(x):
-    x / 0
-
-
-def print_value(i, list):
-    print(list[i])
-
-
-def print_alt_value(i, list):
-    if i > len(list):
-        raise ValueError('Invalid length ' + str(i))
-    print(list[i])
+# Provides numerous
+# examples of different options for exception handling
 
 
 def my_function(x, y):
+    """
+      A simple function to divide x by y
+    """
     print('my_function in')
-    result = x / y
+    solution = x / y
     print('my_function out')
-    return result
+    return solution
 
-
-def f2():
-    print('f2 in')
-    function_bang()
-    print('f2 out')
-
-
-def function_bang():
-    print('function_bang in')
-    raise ValueError('Bang!')
-    print('function_bang out')
-
-
-def divide(x, y):
-    try:
-        result = x / y
-    except Exception as e:
-        raise RuntimeError from e
-
-
-divide(6, 0)
 
 print('Starting')
+print(my_function(6, 0))
+
 try:
     print('Before my_function')
-    my_function(6, 2)
+    result = my_function(6, 0)
+    print(result)
+    print('After my_function')
+except:
+    print('oops')
+
+print('-' * 20)
+
+try:
+    print('Before my_function')
+    result = my_function(6, 0)
+    print(result)
+    print('After my_function')
+except ZeroDivisionError:
+    print('oops')
+
+print('-' * 20)
+
+try:
+    print('Before my_function')
+    result = my_function(6, 0)
+    print(result)
     print('After my_function')
 except ZeroDivisionError as exp:
+    print(exp)
+    print('oops')
+
+print('Done')
+
+print('-' * 20)
+
+try:
+    print('Before my_function')
+    result = my_function(6, 2)
+    print(result)
+    print('After my_function')
+except ZeroDivisionError as exp:
+    print(exp)
     print('oops')
 else:
     print('All OK')
 
-print('Done')
+print('-' * 20)
 
 try:
-    my_function(6, 0)
+    print('At start')
+    result = my_function(6, 2)
+    print(result)
 except ZeroDivisionError as e:
     print(e)
 else:
@@ -61,27 +72,52 @@ else:
 finally:
     print('Always runs')
 
-try:
-    function_bang()
-except ValueError as ve:
-    print(ve)
-    raise
+print('-' * 20)
 
-l = [1, 2, 3, 4]
 try:
-    print_alt_value(7, l)
+    result = my_function(6, 0)
+    print(result)
 except Exception as e:
     print(e)
 
-l = [1, 2, 3, 4]
-try:
-    print_value(2, l)
-    print_value(3, l)
-except IndexError as e:
-    print('Exception: ', e)
-else:
-    print('All OK')
-finally:
-    print('Always runs')
+print('-' * 20)
 
-print(divide(3, 0))
+try:
+    print('Before my_function')
+    result = my_function(6, 0)
+    print(result)
+    print('After my_function')
+except ZeroDivisionError as exp:
+    print(exp)
+    print('oops')
+except ValueError as exp:
+    print(exp)
+    print('oh dear')
+except:
+    print('That is it')
+
+print('-' * 20)
+
+try:
+    print('Before my_function')
+    result = my_function(6, 0)
+    print(result)
+    print('After my_function')
+finally:
+    print('Always printed')
+
+number = 0
+input_accepted = False
+while not input_accepted:
+    user_input = input('Please enter a number')
+    if user_input.isnumeric():
+        number = int(user_input)
+        input_accepted = True
+    else:
+        try:
+            number = float(user_input)
+            input_accepted = True
+        except ValueError:
+            print('Needs to be a number')
+
+print(number)

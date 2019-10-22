@@ -3,21 +3,26 @@ def print_msg():
 
 
 print_msg()
+print(print_msg)
 print(type(print_msg))
 
 
-def print_my_msg(msg):
+def print_my_msg(msg, prompt='>'):
+    print(prompt, end=' ')
     print(msg)
 
 
-print_my_msg('Hello World')
+print_my_msg('Hello World', '&')
 print_my_msg('Good day')
 print_my_msg('Welcome')
 print_my_msg('Ola')
 
+result = 0
 
-def square(n):
-    return n * n
+
+def square(number):
+    result = number * number
+    return result
 
 
 # Store result from square in a variable
@@ -30,8 +35,8 @@ if square(3) < 15:
     print('Still less than 15')
 
 
-def swap(a, b):
-    return b, a
+def swap(first_value, second_value):
+    return second_value, first_value
 
 
 a = 2
@@ -45,22 +50,27 @@ print(z)
 
 
 def get_integer_input(message):
-    """
-    This function will display the message to the user
-    and request that they input an integer.
+  """
+  This function will display the message to the user
+  and request that they input an integer.
 
-    If the user enters something that is not a number
-    then the input will be rejected
-    and an error message will be displayed.
+  If the user enters something that is not a number
+  then the input will be rejected
+  and an error message will be displayed.
 
-    The user will then be asked to try again."""
+  The user will then be asked to try again.
 
-    value_as_string = input(message)
-    while not value_as_string.isnumeric():
-        print('The input must be an integer')
-        value_as_string = input(message)
+  For example:
+      age = get_integer_input('Please input your age: ')
+      print('age is', age)
+  """
 
-    return int(value_as_string)
+  value_as_string = input(message)
+  while not value_as_string.isnumeric():
+      print('The input must be an integer')
+      value_as_string = input(message)
+
+  return int(value_as_string)
 
 
 age = get_integer_input('Please input your age: ')
@@ -69,21 +79,23 @@ print('age is', age)
 print(get_integer_input.__doc__)
 
 
-def makeAList(start, end):
-    newList = list(range(start, end))
-    return newList
+def make_a_list(start, end):
+    new_list = list(range(start, end))
+    return new_list
 
 
 def dictionary():
     return {'one': 1, 'two': 2}
 
 
-list1 = makeAList(5, 10)
+list1 = make_a_list(5, 10)
 print(list1)
 
 print(dictionary())
 
-
-double = lambda i : i * i
-
+# Usually only used to define a
+# function on the fly
+double = lambda i: i * i
 print(double(10))
+
+

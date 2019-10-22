@@ -6,9 +6,9 @@
 x = y = z = 0
 print(x)
 
-# Be careful of this
-print(2 + 2 * 2 - 1 // 2)
-# print(2 + 2 * 2 - 1)
+# Be careful of this sort of thing
+print('What is the value printed here')
+print(2 + 2 * 2 - 1)
 
 # Strings can be
 string1 = 'John'
