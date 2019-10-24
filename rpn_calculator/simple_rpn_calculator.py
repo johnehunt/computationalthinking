@@ -8,8 +8,20 @@ def tokenize(string):
         that comprise it for example convert the string  '2 3 +'
         into a list [2, 3, '+'] """
     tokens = string.split(' ')
-    result = [int(token) if token.isdigit() else token for token in tokens]
-    return result
+    # Create a list to hold the results to return
+    # A list is a bit like a growable array of things
+    results = []
+
+    # Loop through each of the elements in the tokens. If the 'token'
+    # is actually an integer convert it to an int and add it to the results
+    # otherwise just add it
+    for token in tokens:
+        if token.isdigit():
+            results.append(int(token))
+        else:
+            results.append(token)
+
+    return results
 
 
 def print_message(message):
@@ -30,6 +42,8 @@ while input_str != 'q':
     try:
 
         # Obtain the two operands and the operator
+        # You can use an index to access elements from a list
+        # note that the list is indexed from zero
         operand_1 = input_tokens[0]
         operand_2 = input_tokens[1]
 
