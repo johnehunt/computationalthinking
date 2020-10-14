@@ -15,7 +15,7 @@ def get_input_depth():
     return int(value_as_string)
 
 
-def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320, tracer_size=4000):
+def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320, tracer_size=5000):
     print('Set up Screen')
     turtle.title(title)
     turtle.setup(screen_size_x, screen_size_y)
