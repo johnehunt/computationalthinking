@@ -1,4 +1,11 @@
-import pygame, random, time
+# You need to install pygame for this program to work
+# However Python 3.8 requires you to install pygame using
+# pip install pygame==2.0.0.dev12
+# Rather than just using pip install pygame
+
+import pygame
+import random
+import time
 
 DISPLAY_WIDTH = 600
 DISPLAY_HEIGHT = 400
