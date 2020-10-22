@@ -18,7 +18,7 @@ MIN_Y = -1.5
 MAX_Y = 1.5
 
 
-def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320, tracer_size=200):
+def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320, tracer_size=5000):
     print('Set up Screen')
     turtle.title(title)
     turtle.setup(screen_size_x, screen_size_y)
@@ -29,7 +29,7 @@ def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320
     turtle.bgcolor(background)  # Set the background colour of the screen
 
 
-setup_screen('Mandelbrot', screen_size_x=IMAGE_SIZE_X, screen_size_y=IMAGE_SIZE_Y, tracer_size=20000)
+setup_screen('Mandelbrot', screen_size_x=IMAGE_SIZE_X, screen_size_y=IMAGE_SIZE_Y, tracer_size=30000)
 turtle.colormode(255)  # Indicates RGB numbers will be in the range 0 to 255
 
 # Generate Mandelbrot

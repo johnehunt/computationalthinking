@@ -1,0 +1,4 @@
+env/
+*.js
+/.vscode
+.vscode/settings.json
