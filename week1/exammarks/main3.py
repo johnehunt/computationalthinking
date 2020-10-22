@@ -1,4 +1,4 @@
-# Alternative solution using componed conditional statement
+# Alternative solution using compound conditional statement
 
 component_a_mark = int(input('Please enter your mark for Component A: '))
 coursework_mark = int(input('Please enter your mark for Component B: '))
