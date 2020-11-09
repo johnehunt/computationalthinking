@@ -35,6 +35,6 @@ if age.isnumeric():
     if age < 18:
         print('You are under 18')
 else:
-    print('Its not an integer')
+    print('Its not a positive integer')
 
 print(age)
