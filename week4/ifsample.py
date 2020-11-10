@@ -54,7 +54,7 @@ print('Bye')
 print('-' * 25)
 age = 15
 status = None
-if age > 12 and age < 20:
+if 12 < age < 20:
     status = 'teenager'
 else:
     status = 'not teenager'
