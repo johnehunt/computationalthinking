@@ -17,8 +17,7 @@ print('Done')
 print('-' * 25)
 
 # This illustrates the use of a break statement
-print('Only print code if all iterations completed')
-num = int(input('Enter a number to check for: '))
+num = int(input('Enter a number: '))
 for i in range(0, 6):
     if i == num:
         break
@@ -30,8 +29,8 @@ print('-' * 25)
 # This illustrates the use of a continue statement
 for i in range(0, 10):
     print(i, ' ', end='')
-    if i % 2 == 1:
+    if i % 2 == 1: # Determine if this is an odd number
         continue
-    print('hey its an even number')
+    print('its an even number')
     print('we love even numbers')
 print('Done')
