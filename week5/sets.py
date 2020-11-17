@@ -1,7 +1,7 @@
 # Working with Sets
 
 # Create an empty set
-a_set = set()  # {} on its own creates a dictionary
+an_empty_set = set()  # {} on its own creates a dictionary
 
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)  # show that duplicates have been removed
