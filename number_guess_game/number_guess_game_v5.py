@@ -52,11 +52,11 @@ while not game_over:
             print('Your guess was lower than the number')
         elif guess > number_to_guess:
             print('Your guess was higher than the number')
-        elif guess == number_to_guess:
+
+        if guess == number_to_guess:
             print('Well done you won!')
             finished_current_game = True
-
-        if count_number_of_tries == MAX_NUMBER_OF_GUESSES:
+        elif count_number_of_tries == MAX_NUMBER_OF_GUESSES:
             print("Sorry - you loose, max number of guesses reached")
             print('The number you needed to guess was',
                   number_to_guess)
