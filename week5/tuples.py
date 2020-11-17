@@ -1,4 +1,4 @@
-#  Exmaples using Tuples
+#  Examples using Tuples
 
 tup1 = (1, 3, 5, 7)
 print('tup1[0]:\t', tup1[0])
