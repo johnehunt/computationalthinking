@@ -48,15 +48,15 @@ while not game_over:
         # Also Check to see they have not exceeded the maximum
         # number of attempts if so break out of loop otherwise
         # give the user come feedback
-        if guess < number_to_guess:
+        if guess == number_to_guess:
+            print('Well done you won!')
+            finished_current_game = True
+        elif guess < number_to_guess:
             print('Your guess was lower than the number')
         elif guess > number_to_guess:
             print('Your guess was higher than the number')
-        elif guess == number_to_guess:
-            print('Well done you won!')
-            finished_current_game = True
 
-        if count_number_of_tries == MAX_NUMBER_OF_GUESSES:
+        if not finished_current_game and count_number_of_tries == MAX_NUMBER_OF_GUESSES:
             print("Sorry - you loose, max number of guesses reached")
             print('The number you needed to guess was',
                   number_to_guess)

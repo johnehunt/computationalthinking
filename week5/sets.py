@@ -1,7 +1,7 @@
 # Working with Sets
 
 # Create an empty set
-a_set = set()  # {} on its own creates a dictionary
+an_empty_set = set()  # {} on its own creates a dictionary
 
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)  # show that duplicates have been removed
@@ -33,6 +33,7 @@ print('Intersection:', s1 & s2)
 print('Difference:', s1 - s2)
 print('Symmetric Difference:', s1 ^ s2)
 
+# Can hold a nested tuple in a set as its immutable
 s1 = {(1, 2, 3)}
 print(s1)
 

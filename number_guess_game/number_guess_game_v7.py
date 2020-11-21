@@ -27,7 +27,7 @@ def get_user_input(prompt):
             print('Input must be a number')
         else:
             user_input_int = int(user_input)
-            if (user_input_int < 1 or user_input_int > 10):
+            if user_input_int < 1 or user_input_int > 10:
                 print('input must be a number in the range 1 to 10')
             else:
                 invalid_input = False

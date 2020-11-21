@@ -1,4 +1,4 @@
-#  Exmaples using Tuples
+#  Examples using Tuples
 
 tup1 = (1, 3, 5, 7)
 print('tup1[0]:\t', tup1[0])
@@ -17,10 +17,9 @@ print('len(tup1):\t', len(tup1))
 tup2 = (1, 'John', ['Phoebe', 22], True, -23.45)
 print(tup2)
 
-
 tup3 = ('apple', 'pear', 'orange', 'plum', 'apple')
 for x in tup3:
-  print(x)
+    print(x)
 
 print(tup3.count('apple'))
 print(tup3.index('pear'))
