@@ -1,7 +1,7 @@
 from pathlib import Path
 
 print('Create Path object for current directory')
-p = Path('.')
+p = Path('my_file.txt')
 print('p:', p)
 print('p.exists():', p.exists())
 print('p.is_dir():', p.is_dir())
