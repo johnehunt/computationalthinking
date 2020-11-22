@@ -1,6 +1,6 @@
 import random
 
-# Initialize the maximum number of guess
+# Initialize the maximum number of guesses
 MAX_NUMBER_OF_GUESSES = 5
 
 # Print the Welcome Banner
