@@ -60,6 +60,7 @@ while not game_over:
         # give the user come feedback
         if guess == number_to_guess:
             print('Well done you won!')
+
             # The player won - check to see if
             # we need to save the low score.
             if count_number_of_tries < current_low_score:
@@ -68,6 +69,8 @@ while not game_over:
                 current_low_score = count_number_of_tries
                 with open('low_score.txt', 'w') as f:
                     f.write(str(current_low_score))
+
+            # Now set the end of current game flag
             finished_current_game = True
         elif guess < number_to_guess:
             print('Your guess was lower than the number')
