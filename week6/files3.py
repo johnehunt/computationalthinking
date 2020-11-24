@@ -6,4 +6,5 @@ file = open('myfile.txt', 'r')
 for line in file:
     print(line, end='')
 
+print()
 file.close()
