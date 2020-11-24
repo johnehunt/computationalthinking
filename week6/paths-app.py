@@ -8,11 +8,6 @@ print('p.is_dir():', p.is_dir())
 print('p.is_file():', p.is_file())
 print('p.absolute():', p.absolute())
 
-print('-' * 10)
-for file in p.glob('*.txt'):
-    print('file:', file)
-print('-' * 10)
-
 p = Path.cwd()
 print('Set up new directory')
 newdir = p / 'test'
