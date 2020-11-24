@@ -6,5 +6,5 @@ file = open('myfile.txt', 'r')
 lines = [line.upper() for line in file]
 
 file.close()
-print(lines)
 
+print(lines)
