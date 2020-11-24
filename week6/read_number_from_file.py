@@ -1,4 +1,4 @@
-# Example illustratign reading numeric data from a file
+# Example illustrating reading numeric data from a file
 
 data = None
 with open('info.dat', 'r') as f:
